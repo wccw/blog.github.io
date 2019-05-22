@@ -424,12 +424,19 @@
       
         
           
-            <h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a><a href="https://github.com" target="_blank" rel="noopener">Github</a></h2><p><code>Github</code>上新建仓库，命名规则：<code>xxxx.github.io</code>，配置<code>SSH Keys</code>，使用 <code>ssh -T git@github.com</code> 验证是否配置成功。有一点要特别注意，如果<code>github</code>用户名如果为<code>wccw</code>，那么仓库命名须为<code>wccw.github.io</code>，访问地址为<code>https://wccw.github.io</code>，否则会出现<code>404</code>的错误。</p>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></h2><p>执行指令<code>$ npm install -g hexo-cli</code>，安装<code>Hexo</code>，注意一点在安装<code>Hexo</code>前，需要安装<a href="http://nodejs.org" target="_blank" rel="noopener">Node.js</a> 和 <code>Git</code>。<br>执行指令：<code>hexo init blog</code>，创建博客站点，在<code>_config.yml</code>文件下，修改配置。<br>修改 deploy:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: git@github.com:wccw/blog.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
-<p>执行 <code>hexo g</code> 生成静态文件，接着执行 <code>hexo d</code>部署网站。如果在执行  <code>hexo d</code>的过程中出现  <code>Error Deloper not found: git</code>,尝试执行<code>npm install hexo-deployer-git --save</code>指令，之后再次执行<code>hexo d</code>，出现<code>INFO  Deploy done: git</code>提示，则发布成功，最后通过<code>https://xxx.github.io</code> 访问博客。</p>
-<h2 id="Next"><a href="#Next" class="headerlink" title="Next"></a><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">Next</a></h2><p><code>Hexo</code>的默认主题为<code>landscape</code>，如果修改为<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a>，克隆源代到<code>themes</code>文件夹下，<code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code>，修改配置文件 <code>_config.yml</code>中的<code>theme</code>为<code>next</code>，然后重新发布即可。在发布前可以执行<code>hexo clean</code>清除一下缓存。</p>
-
+            <p>
+              GithubGithub上新建仓库，命名规则：xxxx.github.io，配置SSH Keys，使用 ssh -T git@github.com 验证是否配置成功。有一点要特别注意，如果github用户名如果为wccw，那么仓库命名须为w
+              ...
+            </p>
+          <!--noindex-->
           
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/05/22/Github-Hexo-Next博客框架搭建/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
