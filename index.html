@@ -388,6 +388,152 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/22/Github-Hexo-Next博客框架/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WCCW">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Write Code Change World">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/22/Github-Hexo-Next博客框架/" class="post-title-link" itemprop="url">Github+Hexo+Next博客框架</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-05-22 15:58:22 / Modified: 16:36:08" itemprop="dateCreated datePublished" datetime="2019-05-22T15:58:22+08:00">2019-05-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a><a href="https://github.com" target="_blank" rel="noopener">Github</a></h2><p><code>Github</code>上新建仓库，命名规则：<code>xxxx.github.io</code>，配置<code>SSH Keys</code>，使用 <code>ssh -T git@github.com</code> 验证是否配置成功。有一点要特别注意，如果<code>github</code>用户名如果为<code>wccw</code>，那么仓库命名须为<code>wccw.github.io</code>，访问地址为<code>https://wccw.github.io</code>，否则会出现<code>404</code>的错误。</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></h2><p>执行指令<code>$ npm install -g hexo-cli</code>，安装<code>Hexo</code>，注意一点在安装<code>Hexo</code>前，需要安装<a href="http://nodejs.org" target="_blank" rel="noopener">Node.js</a> 和 <code>Git</code>。<br>执行指令：<code>hexo init blog</code>，创建博客站点，在<code>_config.yml</code>文件下，修改配置。<br>修改 deploy:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: git@github.com:wccw/blog.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
+<p>执行 <code>hexo g</code> 生成静态文件，接着执行 <code>hexo d</code>部署网站。如果在执行  <code>hexo d</code>的过程中出现  <code>Error Deloper not found: git</code>,尝试执行<code>npm install hexo-deployer-git --save</code>指令，之后再次执行<code>hexo d</code>，出现<code>INFO  Deploy done: git</code>提示，则发布成功，最后通过<code>https://xxx.github.io</code> 访问博客。</p>
+<h2 id="Next"><a href="#Next" class="headerlink" title="Next"></a><a href="http://theme-next.iissnan.com" target="_blank" rel="noopener">Next</a></h2><p><code>Hexo</code>的默认主题为<code>landscape</code>，如果修改为<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">next</a>，克隆源代到<code>themes</code>文件夹下，<code>git clone https://github.com/theme-next/hexo-theme-next themes/next</code>，修改配置文件 <code>_config.yml</code>中的<code>theme</code>为<code>next</code>，然后重新发布即可。在发布前可以执行<code>hexo clean</code>清除一下缓存。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/22/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -562,7 +708,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
